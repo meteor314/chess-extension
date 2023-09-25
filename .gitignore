@@ -1,0 +1,17 @@
+node_modules/
+*-lock.json
+.vscode/
+# vim config
+*.swo
+*.swp
+dummy.js
+# vs code config
+.venv/
+config.ini
+#config files
+*.cfg
+dummy.json
+
+# python cache
+__pycache__/
+*.py[cod]
