@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Change Title Extension",
+  "version": "1.0",
+  "description": "A simple extension to change the title of a web page.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "./images/logo.png",
+      "32": "./images/logo.png",
+      "48": "./images/logo.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.chess.com/*"],
+      "js": ["./js/contentScript.js"]
+    }
+  ]
+}
